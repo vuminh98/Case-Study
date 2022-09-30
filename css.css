@@ -1,0 +1,148 @@
+/*căn ảnh logo*/
+.center {
+    display : block;
+    margin-left: auto;
+    margin-right:auto;
+    background-size: 123px;
+    width:10%;
+}
+
+
+a:hover {
+    color: coral;
+}
+/*đây là viet chữ vào ảnh*/
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.centered1 {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*size chữ của ảnh*/
+div.centered {
+    font-size: 270%;
+}
+
+div.centered1 {
+    font-size: 200%;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 15px;
+}
+.box input{
+    margin: 10px;
+}
+.box a{
+    margin: 10px;
+
+}
+.box {
+    margin-left:1000px;
+    width: 200px;
+    height: 90px;
+    background-color: antiquewhite;
+}
+
+#text1 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.typecar {
+    width: 1200px;
+    height: 100px;
+    background-color: #b0abab;
+}
+
+#text2 {
+    padding-top: 10px;
+    padding-left: 70px;
+    font-family: Arial Narrow;
+    font-size: 20px;
+}
+
+.product-item {
+    padding-left: 60px;
+}
+
+.price, .name, .type, .color, .category {
+    padding-left: 120px
+}
+
+.button {
+    padding-left: 50px;
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vh;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+}
+body {
+    padding: 2%;
+}
+#slideshow {
+    overflow: hidden;
+    height: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.slide-wrapper {
+    width: 3200px;
+    -webkit-animation: slide 5s ease infinite;
+}
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    80% {margin-left: -1456px;}
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css.css">
+
+<style>
+  body {
+    background-color: azure;
+  }
+</style>
+</head>
+<p><hr><img src="Porsche_logo.svg.png" class="center" width="123px" height="75px" ></hr></p>
+<body>
+
+<div class="box">
+  <input type="text" placeholder="Find">
+  <br><a>Customize cars</a></br>
+  <a style="margin-top: 10px">Contact</a>
+</div>
+<div class="menu" id="text1">
+  <ul>
+    <li><i class="fa-solid fa-car"></i></li>
+    <li><a  style="color: orange;text-decoration-line: none"  href="trang2.html">Cars Model</a></li>
+    <li><i class="fa-solid fa-tags"></i></li>
+    <li><a>Price</a></li>
+    <li><i class="fa-brands fa-centercode"></i></li>
+    <li><a>Porsche Center</a></li>
+    <li><i class="fa-brands fa-servicestack"></i></li>
+    <li><a>Service</a></li>
+    <li><i class="fa-solid fa-circle-info"></i></li>
+    <li><a>About Porsche</a></li>
+    <li><i class="fa-solid fa-arrows-to-circle"></i></li>
+    <li><a>Focal</a></li>
+  </ul>
+</div>
+<div class="modal-container" id="modal_container">
+  <div class="modal">
+    <h1>Register Form</h1>
+    <p>
+      <input type="text" placeholder="Name"><br>
+      <input type="text" placeholder="Tel"><br>
+      <input type="text" placeholder="Address"><br>
+      <button id="submit" onclick="confirmRegister()">Confirm Register</button>
+      <button id="close">Close</button>
+    </p>
+  </div>
+</div>
+
+<div class="typecar" id="text2">
+  <span>Cars Model</span>
+  <span>
+    <input type="checkbox" id="Cayman1" onchange="filterCayman()"><label>Cayman</label>
+    <input type="checkbox" id="Taycan1" onchange="filterTaycan()"><label>Taycan</label>
+    <input type="checkbox" id="Macan1" onchange="filterMacan()"><label>Macan</label>
+    <input type="checkbox" id="Cayenne1" onchange="filterCayenne()"><label>Cayenne</label><br>
+  </span>
+  <div>
+    <span>Car Price: </span>
+    <select id="price" onchange="filterPrice()">
+            <option value="low" ><span class="value" id="value1" >1.000.000.000 - 3.000.000.000 VND</span></option>
+            <option value="medium"><span class="value" id="value2">3.000.000.000 - 6.000.000.000 VND</span></option>
+            <option value="high"><span class="value" id="value3">6.000.000.000 - 9.000.000.000 VND</span></option>
+    </select>
+  </div>
+  <span>Designs</span>
+  <input type="radio" onchange="filterCayman()"><label>Coupe</label>
+  <input type="radio" onchange="filterCayman()"><label>Cabriolet</label>
+  <input type="radio" onchange="filterCayman()"><label>Roadster</label>
+  <input type="radio" onchange="filterCayman()"><label>SUV</label>
+  <input type="radio" onchange="filterCayman()"><label>Sport Saloon</label>
+  <input type="radio" onchange="filterCayman()"><label>Sport Turismo</label>
+</div>
+<div id="displayElement"></div>
+</body>
+<script src="createOOP.js"></script>
+<script src="SolveOOP.js"></script>
+<div id="buy-product"></div><br>
+<br>
+<span><h1 style="text-align: center">World of Porsche</h1></span>
+<p><hr><img src="anh5.jpg" width="400px" height="450px" ><img src="anh6.jpg" width="400px" height="450px" ><img src="anh7.jpg" width="350px" height="450px" ></hr></p>
+<hr>
+<p>Information Contact:</p>
+<h4>Porsche VietNam</h4>
+<p>Website:www.porsche-vietnam.vn</p>
+<p>Email:info@porsche-vietnam.com</p>
+<h4>Center Porsche Sai Gon</h4>
+<p><a>DVTM-5-6-7,Road No N1 & DVTM-4,Road No7</a></p>
+<p><a>Tan Thuan Dong,District 7,Ho Chi Minh City</a></p>
+<p><a>Tel: +84 28 54141 911</a></p>
+<p><a>Hotline Selling: +84 909 768 911</a></p>
+<p><a>Hotline Service: +84 907 096 911</a></p>
+<p><button id="share" value="Share Page"  >Share Page</button></p>
+</html>
