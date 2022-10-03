@@ -55,12 +55,5 @@ class Product {
         this.image= value;
     }
 
-    get category() {
-        return this.category;
-    }
-
-    set category(value) {
-        this.category= value;
-    }
-}
+    
 
